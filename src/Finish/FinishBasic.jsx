@@ -6,13 +6,33 @@ const FinishBasic = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="fcontainer">
+      <div className="whole">
         <div className="header">
-          <button>
-            <img src="./Assets/back.png" alt="back" />
-          </button>
+          <div className="hbutton">
+            <button onClick={() => navigate("/game")}>
+              <img src="./Assets/back.png" alt="" />
+            </button>
+          </div>
+          <div className="hlevel">
+            <div className="hbar">
+              <img src="./Assets/completed.png" alt="" />
+            </div>
+            <div className="hbanana">
+              <img src="./Assets/yellowbanana.png" alt="" />
+            </div>
+          </div>
         </div>
-        <div className="content">content</div>
+        <div className="content">
+          <div className="reward" onClick={() => alert("Congo")}>
+            <img src="./Assets/final.png" alt="" />
+          </div>
+          <div className="happymonkey">
+            <img src="./Assets/happymonkey.png" alt="" />
+          </div>
+          {/* <div className="celebrations">
+            <img src="./Assets/yellowbanana.png" alt="" />
+          </div> */}
+        </div>
       </div>
     </>
   );
