@@ -1,0 +1,30 @@
+.rect1 {
+  width: 173.12px;
+  height: 221px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16.58px;
+  box-shadow: 0.61px 0.61px 3.07px 0px rgba(0, 0, 0, 0.25);
+}
+.rect2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 158.69px;
+  height: 202.58px;
+  top: 9.21px;
+  left: 7.21px;
+  gap: 0px;
+  border-radius: 16.58px;
+  opacity: 0px;
+}
+
+.heart img {
+  width: 64px;
+  height: 56px;
+  gap: 0px;
+  opacity: 0px;
+}
