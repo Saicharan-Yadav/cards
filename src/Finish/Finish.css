@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.fcontainer {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../public/Assets/background.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.header {
+  /* background-color: blueviolet; */
+  width: 100vw;
+  height: 20vh;
+}
+.header button {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+.header img {
+}
+.content {
+  /* background-color: red; */
+  width: 100vw;
+  height: 80vh;
+}

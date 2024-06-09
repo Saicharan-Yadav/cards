@@ -1,0 +1,73 @@
+.whole {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.level {
+  position: absolute;
+  display: flex;
+  height: 40px;
+  margin-left: 300px;
+  margin-top: -175px;
+  /* border: 2px solid red; */
+}
+
+.banana {
+  width: 124.89px;
+  height: 120.02px;
+  top: 10.71px;
+  left: 941px;
+  gap: 0px;
+  opacity: 0px;
+  rotate: 19.36 deg;
+  margin-top: -30px;
+  margin-left: -60px;
+}
+
+.monkey {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.back {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  left: 4%;
+  top: 4%;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+.cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.button {
+  position: absolute;
+  width: 18%;
+  height: 13%;
+  top: 79%;
+  left: 65%;
+  cursor: pointer;
+}
+.message {
+  height: 200px;
+  width: 350px;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+}
+
+.finish {
+  position: absolute;
+  width: 550.9px;
+  height: 742.19px;
+  top: 79px;
+  left: 476.71px;
+  gap: 0px;
+  opacity: 0px;
+  rotate: -0.44 deg;
+}
