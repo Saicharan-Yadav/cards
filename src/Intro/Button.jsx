@@ -12,7 +12,7 @@ const Button = (props) => {
       navigate("/intro2");
     }
     if (props.content === "yes") {
-      navigate("/game");
+      navigate("/play");
     }
   }
   return (
