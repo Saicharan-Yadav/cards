@@ -8,6 +8,7 @@ const rightArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function Play() {
   const [leftOpen, setLeftOpen] = useState(null);
   const [rightOpen, setRightOpen] = useState(null);
+
   const [matched, setMatched] = useState([]);
   const [points, setPoints] = useState(0);
 

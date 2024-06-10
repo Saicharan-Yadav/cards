@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Card.css";
 
 const Card = (props) => {
+  let rimg = "./Assets/love.png";
+  let rdim = {
+    width: "64px",
+    heigth: "56px",
+  };
+
+  if (props.isOpen) {
+    rimg = props.image;
+    rdim = {
+      width: "100%",
+      height: "100%",
+    };
+  }
+
   let grad = "";
   let shadow = "";
-  console.log(props);
+
   if (props.color === "red") {
     grad =
       "linear-gradient(180deg, #fba8c1 0%, rgba(251, 168, 193, 0.54) 46%, rgba(251, 168, 193, 0.97) 100%)";
@@ -16,19 +30,26 @@ const Card = (props) => {
   }
 
   return (
-    <>
-      <div className="gmain" on>
+    <div className={props.visible ? "invisible" : ""} onClick={props.onClick}>
+      <div className="gmain">
         <div className="rect1" style={{ background: grad }}>
           <div className="rect2">
             <div className="mainheart" style={{ boxShadow: shadow }}>
-              <div className="heart">
-                <img src="./Assets/love.png" alt="love" />
+              <div
+                className="heart"
+                style={{ width: rdim.width, height: rdim.height }}
+              >
+                <img
+                  src={rimg}
+                  alt="love"
+                  style={{ width: "100%", height: "100%" }}
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
