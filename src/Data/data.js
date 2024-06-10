@@ -56,13 +56,13 @@ export const data = {
       num: "01",
       scontent: "It has images.",
       mcontent: "Select a pink card",
-      image: "../Assets/explain1.png ",
+      image: "./Assets/explain1.png ",
     },
     {
       num: "02",
       mcontent: "Select a blue card. ",
       scontent: "It has alphabets.",
-      image: "../Assets/explain2.png ",
+      image: "./Assets/explain2.png ",
     },
     {
       num: "03",
