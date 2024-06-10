@@ -12,6 +12,9 @@ const Button = (props) => {
       navigate("/intro2");
     }
     if (props.content === "yes") {
+      navigate("/intro3");
+    }
+    if (props.content === "play") {
       navigate("/game");
     }
   }

@@ -8,6 +8,34 @@
   flex-direction: column;
 }
 
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 20vh;
+}
+
+.fbutton {
+  margin: 0px 150px 150px 0;
+}
+
+.footer button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.footer button img {
+  width: 175px;
+  height: 80px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -71,10 +99,18 @@
   display: flex;
 
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.expcontent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
 }
 .reward {
   position: absolute;

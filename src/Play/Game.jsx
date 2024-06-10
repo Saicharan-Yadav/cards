@@ -24,12 +24,12 @@ const Game = (props) => {
     if (leftOpen !== null && rightOpen !== null) {
       console.log(leftOpen, rightOpen);
       if (leftOpen === rightOpen) {
-        setPoints((prev) => prev + 1);
         setTimeout(() => {
+          setPoints((prev) => prev + 1);
+          setMatched((prev) => [...prev, leftOpen]);
           setLeftOpen(null);
           setRightOpen(null);
         }, 1000);
-        setMatched((prev) => [...prev, leftOpen]);
       } else {
         setTimeout(() => {
           alert("Not matched");

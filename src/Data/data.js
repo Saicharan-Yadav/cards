@@ -51,4 +51,24 @@ export const data = {
       value: "155",
     },
   ],
+  explain: [
+    {
+      num: "01",
+      scontent: "It has images.",
+      mcontent: "Select a pink card",
+      image: "../Assets/explain1.png ",
+    },
+    {
+      num: "02",
+      mcontent: "Select a blue card. ",
+      scontent: "It has alphabets.",
+      image: "../Assets/explain2.png ",
+    },
+    {
+      num: "03",
+      mcontent: "If they’re same Its a match !",
+      scontent: "otherwise retry :(",
+      image: "../Assets/explain3.png ",
+    },
+  ],
 };
