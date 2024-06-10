@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Game.css";
 import Card from "./Card";
 
-import { data } from "../Data/data";
-const Game = () => {
+const Game = (props) => {
   const navigate = useNavigate();
 
   const [leftOpen, setLeftOpen] = useState(null);
@@ -12,6 +11,8 @@ const Game = () => {
 
   const [matched, setMatched] = useState([]);
   const [points, setPoints] = useState(0);
+
+  useEffect(() => {}, []);
 
   useEffect(() => {
     if (points === 5) {
@@ -25,15 +26,15 @@ const Game = () => {
       if (leftOpen === rightOpen) {
         setPoints((prev) => prev + 1);
         setTimeout(() => {
-          setMatched((prev) => [...prev, leftOpen]);
           setLeftOpen(null);
           setRightOpen(null);
         }, 1000);
+        setMatched((prev) => [...prev, leftOpen]);
       } else {
         setTimeout(() => {
+          alert("Not matched");
           setLeftOpen(null);
           setRightOpen(null);
-          alert("Not matched");
         }, 1000);
       }
     }
@@ -68,7 +69,7 @@ const Game = () => {
         </div>
         <div className="gcontent">
           <div className="gleft">
-            {data.left.map((item, index) => {
+            {props.left.map((item, index) => {
               return (
                 <div key={index} className="gcard">
                   {/* <img src={item.image} alt={item.value} /> */}
@@ -86,7 +87,7 @@ const Game = () => {
             })}
           </div>
           <div className="gright">
-            {data.right.map((item, index) => {
+            {props.right.map((item, index) => {
               return (
                 <div key={index} className="gcard">
                   {/* <img src={item.image} alt={item.value} /> */}
