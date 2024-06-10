@@ -9,7 +9,7 @@ const FinishBasic = () => {
       <div className="whole">
         <div className="header">
           <div className="hbutton">
-            <button onClick={() => navigate("/game")}>
+            <button onClick={() => navigate("/play")}>
               <img src="./Assets/back.png" alt="" />
             </button>
           </div>

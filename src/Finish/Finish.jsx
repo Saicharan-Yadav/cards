@@ -9,7 +9,7 @@ const Finish = () => {
   return (
     <>
       <Basic content="Congratulations! You have successfully completed the game." />
-      <button onClick={() => navigate("/game")}>
+      <button onClick={() => navigate("/play")}>
         <img className="back" src="./Assets/back.png" alt="back" />{" "}
       </button>
       <div className="level">
