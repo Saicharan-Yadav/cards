@@ -7,7 +7,7 @@ const ExplainCard = (props) => {
       <div className="econtainer">
         <div className="ercontainer">
           <div className="eimg">
-            <img src="./Assets/explain1.png" alt="e2" />
+            <img src={props.image} alt="e2" />
           </div>
           <div className="econtent">
             <div className="enum">{props.num}</div>
