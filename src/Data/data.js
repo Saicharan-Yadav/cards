@@ -68,7 +68,7 @@ export const data = {
       num: "03",
       mcontent: "If they’re same Its a match !",
       scontent: "otherwise retry :(",
-      image: "../Assets/explain3.png ",
+      image: "./Assets/explain3.png ",
     },
   ],
 };
